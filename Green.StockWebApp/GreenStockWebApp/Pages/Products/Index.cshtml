@@ -4,12 +4,13 @@
 }
 
 
-@foreach( var items in Model.Products)
-            {
-  
+@foreach (var items in Model.Products)
+{
 
-<h1>
-    <td>@Html.DisplayFor(modelItem => items.Name)</td>
-</h1>
 
-            }
+    <h1>
+         @Html.DisplayFor(modelItem => items.Name)
+
+    </h1>
+}
+

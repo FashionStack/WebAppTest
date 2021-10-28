@@ -15,7 +15,7 @@ namespace GreenStockWebApp.Pages.Products
     {
         public Product Product { get; set; }
 
-        string baseUrl = "https://localhost:44309/";
+        string baseUrl = "https://localhost:44345/";
         public async Task<IActionResult> OnDetailsAsync(int? id)
         {
 
@@ -30,7 +30,7 @@ namespace GreenStockWebApp.Pages.Products
                 client.DefaultRequestHeaders.Clear();
                 client.DefaultRequestHeaders.Accept.Add(
                     new MediaTypeWithQualityHeaderValue("application/json"));
-                HttpResponseMessage response = await client.GetAsync("api/Product/" + id);
+                HttpResponseMessage response = await client.GetAsync("api/Products/" + id);
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -50,7 +50,7 @@ namespace GreenStockWebApp.Pages.Products
                 client.DefaultRequestHeaders.Accept.Add(
                     new MediaTypeWithQualityHeaderValue("applicaiton/json"));
                 HttpResponseMessage response = await client
-                    .PutAsJsonAsync("api/Product/" + Product.ProductId,Product);
+                    .PutAsJsonAsync("api/Products/" + Product.ProductId,Product);
                 if (response.IsSuccessStatusCode)
                 {
                     return RedirectToPage("/.index");

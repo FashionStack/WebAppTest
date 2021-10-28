@@ -10,6 +10,7 @@ namespace GreenStockWebApp.Models
         public int CategoryId { get; set; }
         public string Name { get; set; }
         public short SizeTipe { get; set; }
+        public bool  Stauts { get; set; }
         public List<Product> Product { get; set; }
 
     }

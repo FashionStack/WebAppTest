@@ -14,8 +14,7 @@ namespace GreenStockWebApp.Pages.Products
     public class IndexModel : PageModel
     {
         public List<Product> Products { get; private set; } = new List<Product>();
-        string BaseUrl = "https://localhost:44309/";
-
+        string BaseUrl = "https://localhost:44344/";
         public async Task OnGetAsync()
         {
 
