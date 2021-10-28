@@ -1,0 +1,33 @@
+﻿@page
+@model GreenStockWebApp.Pages.Products.CreateModel
+@{
+}
+
+
+<div class="formulario">
+    <div>
+        <h3>
+            Nome : @Html.DisplayFor(model => Model.Product.Name)
+        </h3>
+    </div>
+    <div>
+        <h3>
+            Tamanho : @Html.DisplayFor(model => Model.Product.Size)
+        </h3>
+    </div>
+    <div>
+        <h3>
+            Quantidade : @Html.DisplayFor(model => Model.Product.Amount)
+        </h3>
+    </div>
+    <div>
+        REF : @Html.DisplayFor(model => Model.Product.Reference_Code)
+    </div>
+    <div>
+        SKU : @Html.DisplayFor(model => Model.Product.SKU)
+    </div>
+    <div>
+        URL da imagem : @Html.DisplayFor(model => Model.Product.ImageUrl)
+    </div>
+
+</div>

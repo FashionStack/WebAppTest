@@ -1,0 +1,55 @@
+﻿@page
+@model GreenStockWebApp.Pages.Products.DetailModel
+
+@{      
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styleEditar.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <title>GreenStock</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="cabecalho">
+            <h1 class="fnt-cbc">Detalhes</h1>
+        </div>
+        <div class="formulario">
+            <div>
+                <h3>
+                    Nome : @Html.DisplayFor(model => Model.Product.Name)
+                </h3>
+            </div>
+            <div>
+                <h3>
+                    Tamanho : @Html.DisplayFor(model => Model.Product.Size)
+                </h3>
+            </div>
+            <div>
+                <h3>
+                    Quantidade : @Html.DisplayFor(model => Model.Product.Amount)
+                </h3>
+            </div>
+            <div>
+                REF : @Html.DisplayFor(model => Model.Product.Reference_Code)
+            </div>
+            <div>
+                SKU : @Html.DisplayFor(model => Model.Product.SKU)
+            </div>
+            <div>
+                URL da imagem : @Html.DisplayFor(model => Model.Product.ImageUrl)
+            </div>
+
+        </div>
+     </div>
+            <div class="imgproduto">
+          </div>
+       
+</body>
+</html> 

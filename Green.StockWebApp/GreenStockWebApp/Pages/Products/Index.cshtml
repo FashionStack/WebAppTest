@@ -1,0 +1,15 @@
+﻿@page
+@model GreenStockWebApp.Pages.Products.IndexModel
+@{
+}
+
+
+@foreach( var items in Model.Products)
+            {
+  
+
+<h1>
+    <td>@Html.DisplayFor(modelItem => items.Name)</td>
+</h1>
+
+            }
